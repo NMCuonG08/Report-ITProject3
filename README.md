@@ -28,6 +28,11 @@
 ![image](https://github.com/user-attachments/assets/d9bac9f3-9da9-469c-b031-7d342506dcff)
 
 
+- Result retrieved from `Retriever`.
+- When Chunk_size= 1 sentence
+- query = "Sinh Viên đã hoàn tất 150 TC của Chương Trình Đào Tạo có thể tốt nghiệp chưa?"
+
+
 
 
 
@@ -63,6 +68,12 @@
 ![image](https://github.com/user-attachments/assets/67ad9fa9-543b-468e-928c-a315700666a4)
 
 
+- Result retrieved from `Retriever`.
+- When Chunk_size= 1 sentence
+- query = "Sinh Viên đã hoàn tất 150 TC của Chương Trình Đào Tạo có thể tốt nghiệp chưa?"
+
+
+
 # Model : nomic-embed-text
 
 - When Chunk_size= 15
@@ -94,6 +105,11 @@
 
   ![image](https://github.com/user-attachments/assets/f4b8d16a-6eca-49db-981f-bdd18614dcbb)
 
+- Result retrieved from `Retriever`.
+- When Chunk_size= 1 sentence
+- query = "Sinh Viên đã hoàn tất 150 TC của Chương Trình Đào Tạo có thể tốt nghiệp chưa?"
+  
+![image](https://github.com/user-attachments/assets/0263630f-af5f-4002-b653-39529fd37f16)
 
 
 
@@ -125,13 +141,18 @@
 ![image](https://github.com/user-attachments/assets/9c50723f-d55c-4ff2-b4e2-37a2f2dc6e5a)
 
 
-
-
 - When Chunk_size= 2 sentences
 - query = "Sinh Viên đã hoàn tất 150 TC của Chương Trình Đào Tạo có thể tốt nghiệp chưa?"
 
 
 
 ![image](https://github.com/user-attachments/assets/a18427a8-f834-4827-9e40-64b8f11f6f18)
+
+
+
+- Result retrieved from `Retriever`.
+- When Chunk_size= 1 sentence
+- query = "Sinh Viên đã hoàn tất 150 TC của Chương Trình Đào Tạo có thể tốt nghiệp chưa?"
+
 
 
