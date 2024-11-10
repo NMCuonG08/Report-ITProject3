@@ -40,7 +40,34 @@
 ![image](https://github.com/user-attachments/assets/1595259e-3649-41d3-a632-1d2519fc0818)
 
 
+- When Chunk_size= sentence
+- query = "Sinh Viên đã hoàn tất 150 TC của Chương Trình Đào Tạo có thể tốt nghiệp chưa?"
+
+![image](https://github.com/user-attachments/assets/a873dba0-9418-473c-b912-bad4f1b653a4)
+
+# Model : nomic-embed-text
+
+- When Chunk_size= 15
+- query = "Sinh Viên đã hoàn tất 150 TC của Chương Trình Đào Tạo có thể tốt nghiệp chưa?"
+
+![image](https://github.com/user-attachments/assets/3862b764-5d76-472c-856b-31af5a846c79)
+
+- When Chunk_size= 25
+- query = "Sinh Viên đã hoàn tất 150 TC của Chương Trình Đào Tạo có thể tốt nghiệp chưa?"
 
 
+![image](https://github.com/user-attachments/assets/fc2ad3ab-207d-4a4c-a3b6-0a79026f4367)
 
+- When Chunk_size= 50
+- query = "Sinh Viên đã hoàn tất 150 TC của Chương Trình Đào Tạo có thể tốt nghiệp chưa?"
+
+![image](https://github.com/user-attachments/assets/e1c155da-53c2-4020-889c-97bd4d7c41ba)
+
+
+- When Chunk_size= sentence
+- query = "Sinh Viên đã hoàn tất 150 TC của Chương Trình Đào Tạo có thể tốt nghiệp chưa?"
+
+![image](https://github.com/user-attachments/assets/59a32f9e-b609-4fac-ade2-ef617d79aa5c)
+
+# Model : mxbai-embed-large
 
