@@ -69,5 +69,31 @@
 
 ![image](https://github.com/user-attachments/assets/59a32f9e-b609-4fac-ade2-ef617d79aa5c)
 
-# Model : mxbai-embed-large
+# Model : snowflake-arctic-embed
+
+- When Chunk_size= 15
+- query = "Sinh Viên đã hoàn tất 150 TC của Chương Trình Đào Tạo có thể tốt nghiệp chưa?"
+
+![image](https://github.com/user-attachments/assets/c7230f45-a64f-45bd-b21f-5666aa47e53f)
+
+
+- When Chunk_size= 25
+- query = "Sinh Viên đã hoàn tất 150 TC của Chương Trình Đào Tạo có thể tốt nghiệp chưa?"
+
+![image](https://github.com/user-attachments/assets/d30dc3de-55aa-4091-84c1-cd89e1e9ec07)
+
+
+- When Chunk_size= 50
+- query = "Sinh Viên đã hoàn tất 150 TC của Chương Trình Đào Tạo có thể tốt nghiệp chưa?"
+
+![image](https://github.com/user-attachments/assets/455f7544-d629-46d5-80c2-ea969c1d538d)
+
+
+
+- When Chunk_size= sentence
+- query = "Sinh Viên đã hoàn tất 150 TC của Chương Trình Đào Tạo có thể tốt nghiệp chưa?"
+
+
+![image](https://github.com/user-attachments/assets/9c50723f-d55c-4ff2-b4e2-37a2f2dc6e5a)
+
 
