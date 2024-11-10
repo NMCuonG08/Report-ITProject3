@@ -33,6 +33,7 @@
 - query = "Sinh Viên đã hoàn tất 150 TC của Chương Trình Đào Tạo có thể tốt nghiệp chưa?"
 
 
+![image](https://github.com/user-attachments/assets/230bb8b9-5709-474b-9075-54553fb7df91)
 
 
 
@@ -71,6 +72,8 @@
 - Result retrieved from `Retriever`.
 - When Chunk_size= 1 sentence
 - query = "Sinh Viên đã hoàn tất 150 TC của Chương Trình Đào Tạo có thể tốt nghiệp chưa?"
+
+![image](https://github.com/user-attachments/assets/328fe321-6770-4f6b-aad1-30d1b65859ee)
 
 
 
@@ -153,6 +156,8 @@
 - Result retrieved from `Retriever`.
 - When Chunk_size= 1 sentence
 - query = "Sinh Viên đã hoàn tất 150 TC của Chương Trình Đào Tạo có thể tốt nghiệp chưa?"
+
+![image](https://github.com/user-attachments/assets/6af4d5b2-b702-4e73-976a-e1c2824d8494)
 
 
 
