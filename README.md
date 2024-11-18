@@ -1,4 +1,4 @@
-# Model : jina/jina-embeddings-v2-base-en
+![image](https://github.com/user-attachments/assets/a0c2fa31-e7f3-4250-af35-29c5d1ffe4ab)# Model : jina/jina-embeddings-v2-base-en
 
 - When Chunk_size= 100 & chunk_overlap = 20 
 
@@ -74,7 +74,8 @@
 - When Chunk_size= 200 chunk_overlap = 50
 - query = "Sinh Viên đã hoàn tất 150 TC của Chương Trình Đào Tạo có thể tốt nghiệp chưa?"
 
-![image](https://github.com/user-attachments/assets/6e0647f3-b837-4143-9b72-251924e96002)
+![image](https://github.com/user-attachments/assets/d91860b1-fe65-4c93-83f8-e45ac932d01e)
+
 
 
 
@@ -83,7 +84,8 @@
 - query = "Sinh Viên đã hoàn tất 150 TC của Chương Trình Đào Tạo có thể tốt nghiệp chưa?"
 
 
-![image](https://github.com/user-attachments/assets/58ef7349-2320-445b-bcbb-b08e4719e03a)
+![image](https://github.com/user-attachments/assets/9a99267f-686e-4c90-a1b0-1e4c2e81f7d8)
+
 
 
 
@@ -92,54 +94,61 @@
 - query = "Sinh Viên đã hoàn tất 150 TC của Chương Trình Đào Tạo có thể tốt nghiệp chưa?"
 
 
-
-![image](https://github.com/user-attachments/assets/668586f2-f9fc-4d6f-b300-510d9457415f)
+![image](https://github.com/user-attachments/assets/e01d82ad-4535-4225-8dd7-38b717b7733d)
 
 
 - When Chunk_size= 400 chunk_overlap = 100
 - query = "Sinh Viên đã hoàn tất 150 TC của Chương Trình Đào Tạo có thể tốt nghiệp chưa?"
 - 
-![image](https://github.com/user-attachments/assets/a5979de8-3440-43c6-8f20-b58c0c6846d7)
+![image](https://github.com/user-attachments/assets/4e086236-db1f-4bbc-a074-47609bc0ab2d)
+
 
 
 
 # Model : nomic-embed-text
 
-- When Chunk_size= 15
+- When Chunk_size= 100 & chunk_overlap = 20 
+
 - query = "Sinh Viên đã hoàn tất 150 TC của Chương Trình Đào Tạo có thể tốt nghiệp chưa?"
 
-![image](https://github.com/user-attachments/assets/3862b764-5d76-472c-856b-31af5a846c79)
+![image](https://github.com/user-attachments/assets/03d58de7-dd19-4946-9270-cd0a56fc39e2)
 
-- When Chunk_size= 25
+
+
+- When Chunk_size= 100 & chunk_overlap = 50
+- query = "Sinh Viên đã hoàn tất 150 TC của Chương Trình Đào Tạo có thể tốt nghiệp chưa?"
+
+![image](https://github.com/user-attachments/assets/273403f4-610d-4418-8c13-ba13ccca7333)
+
+
+
+- When Chunk_size= 200 chunk_overlap = 50
+- query = "Sinh Viên đã hoàn tất 150 TC của Chương Trình Đào Tạo có thể tốt nghiệp chưa?"
+
+![image](https://github.com/user-attachments/assets/d1401cde-905f-4eb9-9b6e-e4033f21ae41)
+
+
+
+- When Chunk_size= 200 chunk_overlap = 100
 - query = "Sinh Viên đã hoàn tất 150 TC của Chương Trình Đào Tạo có thể tốt nghiệp chưa?"
 
 
-![image](https://github.com/user-attachments/assets/fc2ad3ab-207d-4a4c-a3b6-0a79026f4367)
+![image](https://github.com/user-attachments/assets/fd4d5757-0810-4355-8c1d-45ef69215e40)
 
-- When Chunk_size= 50
+
+
+- When Chunk_size= 400 chunk_overlap = 200
 - query = "Sinh Viên đã hoàn tất 150 TC của Chương Trình Đào Tạo có thể tốt nghiệp chưa?"
 
-![image](https://github.com/user-attachments/assets/e1c155da-53c2-4020-889c-97bd4d7c41ba)
+( làm lên )
+
+![image](https://github.com/user-attachments/assets/e6da0c1b-958b-4367-a15f-05076001cbc9)
 
 
-- When Chunk_size= 1 sentence
+- When Chunk_size= 400 chunk_overlap = 100
 - query = "Sinh Viên đã hoàn tất 150 TC của Chương Trình Đào Tạo có thể tốt nghiệp chưa?"
-
-
-![image](https://github.com/user-attachments/assets/59a32f9e-b609-4fac-ade2-ef617d79aa5c)
-
-
-- When Chunk_size= 2 sentences
-- query = "Sinh Viên đã hoàn tất 150 TC của Chương Trình Đào Tạo có thể tốt nghiệp chưa?"
-
-  ![image](https://github.com/user-attachments/assets/f4b8d16a-6eca-49db-981f-bdd18614dcbb)
-
-- Result retrieved from `Retriever`.
-- When Chunk_size= 1 sentence
-- query = "Sinh Viên đã hoàn tất 150 TC của Chương Trình Đào Tạo có thể tốt nghiệp chưa?"
-  
-![image](https://github.com/user-attachments/assets/0263630f-af5f-4002-b653-39529fd37f16)
-
+- 
+![image](https://github.com/user-attachments/assets/dd2f23fc-f315-4d62-b67f-7c9082002020)
 
 
 # Model : snowflake-arctic-embed
