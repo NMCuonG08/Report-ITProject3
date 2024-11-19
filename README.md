@@ -121,7 +121,10 @@
 - 
 ![image](https://github.com/user-attachments/assets/4e086236-db1f-4bbc-a074-47609bc0ab2d)
 
+- When Chunk_size= 400 chunk_overlap = 300
+- query = "Sinh Viên đã hoàn tất 150 TC của Chương Trình Đào Tạo có thể tốt nghiệp chưa?"
 
+![image](https://github.com/user-attachments/assets/40ce973d-460e-447f-8aaa-7e26dd3d5fca)
 
 
 # Model : nomic-embed-text
@@ -185,6 +188,13 @@
 ![image](https://github.com/user-attachments/assets/dd2f23fc-f315-4d62-b67f-7c9082002020)
 
 
+- When Chunk_size= 400 chunk_overlap = 300
+- query = "Sinh Viên đã hoàn tất 150 TC của Chương Trình Đào Tạo có thể tốt nghiệp chưa?"
+
+![image](https://github.com/user-attachments/assets/40ce973d-460e-447f-8aaa-7e26dd3d5fca)
+
+
+
 # Model : snowflake-arctic-embed
 
 - When Chunk_size= 100 & chunk_overlap = 20 
@@ -243,6 +253,12 @@
 - query = "Sinh Viên đã hoàn tất 150 TC của Chương Trình Đào Tạo có thể tốt nghiệp chưa?"
 - 
 ![image](https://github.com/user-attachments/assets/ec95051f-874e-4c78-9ff6-62f0518cc851)
+
+- When Chunk_size= 400 chunk_overlap = 300
+- query = "Sinh Viên đã hoàn tất 150 TC của Chương Trình Đào Tạo có thể tốt nghiệp chưa?"
+
+![image](https://github.com/user-attachments/assets/0f5a872b-0b0e-4e88-a096-7822566ab8c0)
+
 
 
 - Result retrieved from `Retriever`.
