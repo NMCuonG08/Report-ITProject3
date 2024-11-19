@@ -1,6 +1,6 @@
 # Model : jina/jina-embeddings-v2-base-en
 
-![image](https://github.com/user-attachments/assets/a0c2fa31-e7f3-4250-af35-29c5d1ffe4ab)
+
 
 - When Chunk_size= 100 & chunk_overlap = 20 
 
