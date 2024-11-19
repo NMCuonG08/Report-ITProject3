@@ -219,7 +219,8 @@
 - When Chunk_size= 300 chunk_overlap = 200
 - query = "Sinh Viên đã hoàn tất 150 TC của Chương Trình Đào Tạo có thể tốt nghiệp chưa?"
 
-![image](https://github.com/user-attachments/assets/e90d85b2-463b-43b6-8840-7e085d6c5bfb)
+![image](https://github.com/user-attachments/assets/a85a8e76-c5d7-4177-b1a5-c6ad69a85d9c)
+
 
 
 
