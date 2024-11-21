@@ -73,8 +73,11 @@
 
 ![image](https://github.com/user-attachments/assets/4c42b8cd-ac35-4845-b59e-1c5ee726d251)
 
+- Kết quả lấy từ Retriever
+- When Chunk_size= 400 chunk_overlap = 200
+- query = "Sinh Viên đã hoàn tất 150 TC của Chương Trình Đào Tạo có thể tốt nghiệp chưa?"
 
-
+![Uploading image.png…]()
 
 
 - When Chunk_size= 100 & chunk_overlap = 50
