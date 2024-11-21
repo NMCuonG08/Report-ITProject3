@@ -1,64 +1,60 @@
-from sklearn.metrics.pairwise import cosine_similarity
+from langchain.text_splitter import CharacterTextSplitter
 from langchain_community.embeddings import OllamaEmbeddings
-from langchain.chains import RetrievalQA
-from langchain_community.vectorstores import Chroma
+from langchain.vectorstores import FAISS
+from langchain.docstore.document import Document
 import textwrap
-import nltk
-import re
-
-# Đảm bảo nltk có thể tải xuống các tài nguyên cần thiết cho việc phân câu
-nltk.download('punkt')
 
 # Đọc nội dung từ file văn bản
 with open('document.txt', 'r', encoding='utf-8') as file:
     content = file.read()
 
-# Hàm để chia văn bản thành các câu với tên trang, chia thành nhóm 3 câu
-def chunk_text_with_page_titles(text, sentences_per_chunk=2):
-    pages = text.split("Page")
-    chunks_with_titles = []
+chunk_size = 400  # Số ký tự mỗi chunk
+chunk_overlap = 200  # Số ký tự chồng lặp giữa các chunk
 
-    # Regular expression pattern for sentence splitting (period, question mark, exclamation mark, semicolon)
-    sentence_endings = re.compile(r'(?<=[.!?;])\s+')
+# Hàm để chia văn bản theo tiêu đề trang (từ khóa "Page")
+def split_text_by_page(text):
+    pages = text.split("Page")  # Tách văn bản thành các trang dựa trên từ khóa "Page"
+    return [page.strip() for page in pages if page.strip()]  # Loại bỏ khoảng trắng và trang rỗng
 
-    for page_index, page_content in enumerate(pages):
-        page_title = f"Page {page_index}"
+# Chia văn bản theo trang
+pages = split_text_by_page(content)
 
-        # Split content based on the sentence-ending punctuation pattern
-        sentences = sentence_endings.split(page_content.strip())
+# Sử dụng CharacterTextSplitter để chia từng trang thành các chunk nhỏ
+text_splitter = CharacterTextSplitter(
+    separator=" ",  # Tách văn bản dựa trên dấu cách
+    chunk_size=chunk_size,
+    chunk_overlap=chunk_overlap
+)
 
-        # Chia thành các chunk có 2 câu mỗi chunk
-        for i in range(0, len(sentences), sentences_per_chunk):
-            chunk = " ".join(sentences[i:i + sentences_per_chunk])
-            chunks_with_titles.append({"title": page_title, "content": chunk})
+chunks_with_titles = []
+for page_index, page_content in enumerate(pages):
+    page_title = f"Page {page_index + 1}"  # Gắn tiêu đề cho từng trang
+    chunks = text_splitter.split_text(page_content)  # Chia trang thành các chunk nhỏ
+    for chunk in chunks:
+        chunks_with_titles.append({"title": page_title, "content": chunk})
 
-    return chunks_with_titles
+# Khởi tạo mô hình embedding
+embedding_model = OllamaEmbeddings(model="mxbai-embed-large")
 
-# Chia văn bản thành các chunk (mỗi chunk có 2 câu)
-chunks_with_titles = chunk_text_with_page_titles(content, sentences_per_chunk=1)
+# Khởi tạo danh sách Document từ chunks_with_titles
+documents = [
+    Document(page_content=chunk["content"], metadata={"title": chunk["title"]})
+    for chunk in chunks_with_titles
+]
 
-# Khởi tạo mô hình embedding và retriever
-embedding_model = OllamaEmbeddings(model="jina/jina-embeddings-v2-base-en")
-
-# Tạo embeddings cho các chunk và khởi tạo kho lưu trữ với Chroma vectorstore
-texts = [chunk['content'] for chunk in chunks_with_titles]
-metadata = [{"title": chunk['title']} for chunk in chunks_with_titles]
-
-# Index các chunk bằng cách sử dụng Chroma vectorstore làm kho lưu trữ
-vectorstore = Chroma.from_texts(texts, embedding_model, metadatas=metadata)
-
-# Khởi tạo retriever
-retriever = vectorstore.as_retriever(search_type="similarity", search_kwargs={"k": 30})
+# Tạo FAISS index và thêm các embeddings
+faiss_index = FAISS.from_documents(documents, embedding_model)
 
 # Truy vấn (câu tìm kiếm)
 query = "Sinh Viên đã hoàn tất 150 TC của Chương Trình Đào Tạo có thể tốt nghiệp chưa?"
 
-# Lấy kết quả từ retriever
+# Tìm kiếm các kết quả liên quan bằng retriever
+retriever = faiss_index.as_retriever(search_type="similarity", search_kwargs={"k": 30})
 results = retriever.get_relevant_documents(query)
 
-# Hiển thị kết quả
+# Hiển thị kết quả trực tiếp từ retriever
 print("Kết quả tìm kiếm:")
 for result in results:
-    print(f"Title: {result.metadata['title']}")
+    print(f"Title: {result.metadata['title']}")  # Tiêu đề trang
     print(f"Chunk: \n{textwrap.fill(result.page_content, width=100)}\n")
     print("=" * 100)
