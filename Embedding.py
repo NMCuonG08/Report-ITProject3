@@ -1,34 +1,40 @@
 from sklearn.metrics.pairwise import cosine_similarity
+from langchain.text_splitter import CharacterTextSplitter
 from langchain_community.embeddings import OllamaEmbeddings
 import textwrap
+
 
 # Đọc nội dung từ file văn bản
 with open('document.txt', 'r', encoding='utf-8') as file:
     content = file.read()
 
-Chunk_size=100
+chunk_size = 400  # Số ký tự mỗi chunk
+chunk_overlap = 200  # Số ký tự chồng lặp giữa các chunk
 
-# Hàm để chia văn bản thành các chunk với tên trang
-def chunk_text_with_page_titles(text, chunk_size=Chunk_size):
-    pages = text.split("Page")
-    chunks_with_titles = []
+# Hàm để chia văn bản theo tiêu đề trang (từ khóa "Page")
+def split_text_by_page(text):
+    pages = text.split("Page")  # Tách văn bản thành các trang dựa trên từ khóa "Page"
+    return [page.strip() for page in pages if page.strip()]  # Loại bỏ khoảng trắng và trang rỗng
 
-    for page_index, page_content in enumerate(pages):
-        page_title = f"Page {page_index}"
-        words = page_content.split()
+# Chia văn bản theo trang
+pages = split_text_by_page(content)
 
-        for i in range(0, len(words), chunk_size):
-            chunk = ' '.join(words[i:i + chunk_size])
-            chunks_with_titles.append({"title": page_title, "content": chunk})
+# Sử dụng CharacterTextSplitter để chia từng trang thành các chunk nhỏ
+text_splitter = CharacterTextSplitter(
+    separator=" ",  # Tách văn bản dựa trên dấu cách
+    chunk_size=chunk_size,
+    chunk_overlap=chunk_overlap
+)
 
-    return chunks_with_titles
-
-
-# Chia văn bản thành các chunk với tên trang
-chunks_with_titles = chunk_text_with_page_titles(content, chunk_size=Chunk_size)
+chunks_with_titles = []
+for page_index, page_content in enumerate(pages):
+    page_title = f"Page {page_index + 1}"  # Gắn tiêu đề cho từng trang
+    chunks = text_splitter.split_text(page_content)  # Chia trang thành các chunk nhỏ
+    for chunk in chunks:
+        chunks_with_titles.append({"title": page_title, "content": chunk})
 
 # Khởi tạo mô hình embedding
-embedding_model = OllamaEmbeddings(model="snowflake-arctic-embed")
+embedding_model = OllamaEmbeddings(model="jina/jina-embeddings-v2-base-en")
 
 # Tạo embedding cho các chunk
 chunk_embeddings = [embedding_model.embed_documents([chunk['content']])[0] for chunk in chunks_with_titles]
@@ -51,7 +57,7 @@ similarities = sorted(similarities, key=lambda x: x['similarity'], reverse=True)
 
 # Hiển thị kết quả
 print("Kết quả tìm kiếm:")
-for result in similarities[:30]:  # Hiển thị 5 kết quả tương đồng nhất
+for result in similarities[:30]:  # Hiển thị 30 kết quả tương đồng nhất
     print(f"Title: {result['title']}")
     print(f"Similarity: {result['similarity']:.4f}")
     print(f"Chunk: \n{textwrap.fill(result['content'], width=100)}\n")
