@@ -316,7 +316,7 @@
 
 ## 3. So với kết quả lấy từ retriever.
 
-- Khi sử dụng cùng mội query và một trường hợp là 1 câu văn bản thì các kết quả thường giống nhau ( em không in ra Similarity score được vì Chroma không hỗ trợ mà khi dùng mấy cái khác thì nó lại bị lỗi sai lệch các  Similarity score khá lớn ) nhưng riêng `jina/jina-embeddings-v2-base-en` thì lại không được giống. 
+- Khi sử dụng cùng mội query và một trường hợp là 1 câu văn bản thì các kết quả thường giống nhau 
 
 
 
