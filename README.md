@@ -299,9 +299,9 @@
 
 ## 1. Độ chính xác của kết quả
 
-- ` Model jina/jina-embeddings-v2-base-en:` Model này đạt giá trị cosine similarity tương đối cao ở một số chunk size nhất định, đặc biệt là khi sử dụng chunk size 15 và 25. Điều này cho thấy model có khả năng truy xuất kết quả phù hợp với query và đáp ứng tốt với các đoạn văn bản có kích thước trung bình.
+- ` Model jina/jina-embeddings-v2-base-en:` Model này đạt giá trị cosine similarity tương đối cao ở một số chunk size nhất định. Điều này cho thấy model có khả năng truy xuất kết quả phù hợp với query và đáp ứng tốt với các đoạn văn bản có kích thước trung bình.
 
-- `Model mxbai-embed-large`: Model này có sự dao động về cosine similarity khi chunk size thay đổi. Tuy nhiên, ở một vài chunk size, đặc biệt là chunk size 50, model này có thể đạt độ chính xác cao hơn. Điều này có thể phù hợp nếu hệ thống cần xử lý các đoạn văn dài hơn.
+- `Model mxbai-embed-large`: Model này có sự dao động về cosine similarity khi chunk size thay đổi. Tuy nhiên, ở một vài chunk size, model này có thể đạt độ chính xác cao hơn. Điều này có thể phù hợp nếu hệ thống cần xử lý các đoạn văn dài hơn.
 
 - `Model nomic-embed-text`: Model này thường cho kết quả ổn định hơn ở các chunk size khác nhau, với cosine similarity cao ở chunk size ngắn (ví dụ: 1 câu hoặc 15 từ). Điều này cho thấy model có khả năng phù hợp với các câu truy vấn ngắn gọn và có thể hữu ích trong các ứng dụng đòi hỏi độ chính xác cao trên các đoạn văn bản ngắn.
 
@@ -312,11 +312,11 @@
 
 - `mxbai-embed-large` lại có sự dao động lớn khi chunk size thay đổi, cho thấy model có thể bị ảnh hưởng bởi độ dài văn bản, và điều này có thể làm giảm chất lượng truy xuất nếu hệ thống cần xử lý nhiều kích thước văn bản khác nhau.
 
-- `jina/jina-embeddings-v2-base-en` có sự ổn định tương đối ở chunk size vừa phải (15 và 25), nhưng lại kém ổn định khi chunk size quá nhỏ hoặc quá lớn. Điều này gợi ý rằng model này phù hợp với dữ liệu có độ dài trung bình.
+- `jina/jina-embeddings-v2-base-en` có sự ổn định tương đối ở chunk size vừa phải , nhưng lại kém ổn định khi chunk size quá nhỏ hoặc quá lớn. Điều này gợi ý rằng model này phù hợp với dữ liệu có độ dài trung bình.
 
 ## 3. So với kết quả lấy từ retriever.
 
-- Khi sử dụng cùng mội query và một trường hợp là 1 câu văn bản thì các kết quả thường giống nhau 
+- Khi sử dụng cùng mội query và một trường hợp là 1 câu văn bản thì các kết quả thường giống nhau .
 
 
 
