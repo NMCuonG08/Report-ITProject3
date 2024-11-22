@@ -64,6 +64,12 @@
 
 ![image](https://github.com/user-attachments/assets/bd5ff84a-1869-4e02-ab04-b2f9d3766f16)
 
+- Kết quả lấy từ Retriever
+- When Chunk_size= 400 chunk_overlap = 200
+- query = "Sinh Viên đã hoàn tất 150 TC của Chương Trình Đào Tạo có thể tốt nghiệp chưa?"
+
+  ![image](https://github.com/user-attachments/assets/334368ff-15da-46a7-a3b1-617e1a253c5e)
+
 
 # Model : mxbai-embed-large
 
@@ -77,7 +83,7 @@
 - When Chunk_size= 400 chunk_overlap = 200
 - query = "Sinh Viên đã hoàn tất 150 TC của Chương Trình Đào Tạo có thể tốt nghiệp chưa?"
 
-![Uploading image.png…]()
+
 
 
 - When Chunk_size= 100 & chunk_overlap = 50
@@ -133,6 +139,11 @@
 
 ![image](https://github.com/user-attachments/assets/917a3441-46e1-4207-a38e-100cba47a103)
 
+- Kết quả lấy từ Retriever
+- When Chunk_size= 400 chunk_overlap = 200
+- query = "Sinh Viên đã hoàn tất 150 TC của Chương Trình Đào Tạo có thể tốt nghiệp chưa?"
+
+![image](https://github.com/user-attachments/assets/0a78c6e8-1146-4df3-9e60-e8332c15fffd)
 
 
 # Model : nomic-embed-text
@@ -200,6 +211,13 @@
 - query = "Sinh Viên đã hoàn tất 150 TC của Chương Trình Đào Tạo có thể tốt nghiệp chưa?"
 
 ![image](https://github.com/user-attachments/assets/40ce973d-460e-447f-8aaa-7e26dd3d5fca)
+
+- Kết quả lấy từ Retriever
+- When Chunk_size= 400 chunk_overlap = 200
+- query = "Sinh Viên đã hoàn tất 150 TC của Chương Trình Đào Tạo có thể tốt nghiệp chưa?"
+
+
+![image](https://github.com/user-attachments/assets/36616cf4-6d7d-4c11-830e-141b23dad617)
 
 
 
@@ -269,12 +287,12 @@
 
 
 
-- Result retrieved from `Retriever`.
-- When Chunk_size= 1 sentence
+
+- Kết quả lấy từ Retriever
+- When Chunk_size= 400 chunk_overlap = 200
 - query = "Sinh Viên đã hoàn tất 150 TC của Chương Trình Đào Tạo có thể tốt nghiệp chưa?"
 
-![image](https://github.com/user-attachments/assets/6af4d5b2-b702-4e73-976a-e1c2824d8494)
-
+![image](https://github.com/user-attachments/assets/56a7d4b9-02bd-4871-8628-a2d73f49c20f)
 
 
 # Đánh giá
