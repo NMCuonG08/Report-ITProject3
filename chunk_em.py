@@ -1,3 +1,6 @@
+
+# Chia văn bản thành các câu tách nhau bởi dấu . hoặc 1 vài ký tự thành 1 câu văn 
+
 from sklearn.metrics.pairwise import cosine_similarity
 from langchain_community.embeddings import OllamaEmbeddings
 import textwrap
