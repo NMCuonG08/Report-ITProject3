@@ -47,7 +47,8 @@
 - When Chunk_size= 300 chunk_overlap = 100
 - query = "Sinh Viên đã hoàn tất 150 TC của Chương Trình Đào Tạo có thể tốt nghiệp chưa?"
 
-![image](https://github.com/user-attachments/assets/3c6c006f-5adf-44ad-bcf0-d494bcc03d2b)
+![image](https://github.com/user-attachments/assets/447ac85d-661a-4655-b731-745b29aebcac)
+
 
 
 
@@ -56,14 +57,16 @@
 
 
 
-![image](https://github.com/user-attachments/assets/c3541d76-5f06-4396-873c-87ca51f7b441)
+![image](https://github.com/user-attachments/assets/caaf9e6b-cc4f-4871-9182-3db21d4f71f1)
+
 
 
 
 - When Chunk_size= 400 chunk_overlap = 100
 - query = "Sinh Viên đã hoàn tất 150 TC của Chương Trình Đào Tạo có thể tốt nghiệp chưa?"
 - 
-![image](https://github.com/user-attachments/assets/a5979de8-3440-43c6-8f20-b58c0c6846d7)
+![image](https://github.com/user-attachments/assets/f97a7dd9-b0af-48f4-84d2-86a8b9571b79)
+
 
 
 - When Chunk_size= 400 chunk_overlap = 300
@@ -84,11 +87,8 @@
 
 - query = "Sinh Viên đã hoàn tất 150 TC của Chương Trình Đào Tạo có thể tốt nghiệp chưa?"
 
-![image](https://github.com/user-attachments/assets/4c42b8cd-ac35-4845-b59e-1c5ee726d251)
+![image](https://github.com/user-attachments/assets/ae1f2a5d-adfc-463b-afb7-de224783236b)
 
-- Kết quả lấy từ Retriever
-- When Chunk_size= 400 chunk_overlap = 200
-- query = "Sinh Viên đã hoàn tất 150 TC của Chương Trình Đào Tạo có thể tốt nghiệp chưa?"
 
 
 
@@ -96,14 +96,15 @@
 - When Chunk_size= 100 & chunk_overlap = 50
 - query = "Sinh Viên đã hoàn tất 150 TC của Chương Trình Đào Tạo có thể tốt nghiệp chưa?"
 
-![image](https://github.com/user-attachments/assets/c3f84254-84be-4e39-b2cf-64e6fa7ccd21)
+![image](https://github.com/user-attachments/assets/7b1fd2b1-913b-4af3-a7be-4b8c4347503b)
+
 
 
 
 - When Chunk_size= 200 chunk_overlap = 50
 - query = "Sinh Viên đã hoàn tất 150 TC của Chương Trình Đào Tạo có thể tốt nghiệp chưa?"
 
-![image](https://github.com/user-attachments/assets/d91860b1-fe65-4c93-83f8-e45ac932d01e)
+![image](https://github.com/user-attachments/assets/628d3e17-eb46-42dc-bd95-2f09dcb5bb00)
 
 
 
