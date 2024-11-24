@@ -40,7 +40,7 @@ embedding_model = OllamaEmbeddings(model="jina/jina-embeddings-v2-base-en")
 chunk_embeddings = [embedding_model.embed_documents([chunk['content']])[0] for chunk in chunks_with_titles]
 
 # Truy vấn (câu tìm kiếm)
-query = "Sinh Viên đã hoàn tất 150 TC của Chương Trình Đào Tạo có thể tốt nghiệp chưa?"
+query = "Thời gian đào tạo và số tín chỉ tối thiểu của các Chương trình đào tạo?"
 
 # Tạo embedding cho câu truy vấn
 query_embedding = embedding_model.embed_query(query)
