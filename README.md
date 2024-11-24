@@ -78,7 +78,8 @@
 - When Chunk_size= 400 chunk_overlap = 200
 - query = "Sinh Viên đã hoàn tất 150 TC của Chương Trình Đào Tạo có thể tốt nghiệp chưa?"
 
-  ![image](https://github.com/user-attachments/assets/334368ff-15da-46a7-a3b1-617e1a253c5e)
+![image](https://github.com/user-attachments/assets/bad7af4b-0334-4a47-99bf-402fe08fffeb)
+
 
 
 # Model : mxbai-embed-large
@@ -158,6 +159,7 @@
 - When Chunk_size= 400 chunk_overlap = 200
 - query = "Sinh Viên đã hoàn tất 150 TC của Chương Trình Đào Tạo có thể tốt nghiệp chưa?"
 
+![image](https://github.com/user-attachments/assets/81d915a3-9c49-4053-8684-3687372b605c)
 
 
 
@@ -242,7 +244,8 @@
 - query = "Sinh Viên đã hoàn tất 150 TC của Chương Trình Đào Tạo có thể tốt nghiệp chưa?"
 
 
-![image](https://github.com/user-attachments/assets/36616cf4-6d7d-4c11-830e-141b23dad617)
+![image](https://github.com/user-attachments/assets/722ff1af-c407-43cf-bb0c-1a9b3b02a025)
+
 
 
 
@@ -323,7 +326,8 @@
 - When Chunk_size= 400 chunk_overlap = 200
 - query = "Sinh Viên đã hoàn tất 150 TC của Chương Trình Đào Tạo có thể tốt nghiệp chưa?"
 
-![image](https://github.com/user-attachments/assets/56a7d4b9-02bd-4871-8628-a2d73f49c20f)
+![image](https://github.com/user-attachments/assets/229fa3de-8523-4548-af36-5afdb9cccb38)
+
 
 
 # Đánh giá
