@@ -260,14 +260,15 @@
 - When Chunk_size= 100 & chunk_overlap = 50
 - query = "Sinh Viên đã hoàn tất 150 TC của Chương Trình Đào Tạo có thể tốt nghiệp chưa?"
 
-![image](https://github.com/user-attachments/assets/273403f4-610d-4418-8c13-ba13ccca7333)
+![image](https://github.com/user-attachments/assets/3f121bf3-fe43-4ca9-a6dd-155f40ff8850)
 
 
 
 - When Chunk_size= 200 chunk_overlap = 50
 - query = "Sinh Viên đã hoàn tất 150 TC của Chương Trình Đào Tạo có thể tốt nghiệp chưa?"
 
-![image](https://github.com/user-attachments/assets/d1401cde-905f-4eb9-9b6e-e4033f21ae41)
+![image](https://github.com/user-attachments/assets/2ffcc5fe-0b2a-42f0-a061-81c03e1ec3fa)
+
 
 
 
@@ -275,13 +276,15 @@
 - query = "Sinh Viên đã hoàn tất 150 TC của Chương Trình Đào Tạo có thể tốt nghiệp chưa?"
 
 
-![image](https://github.com/user-attachments/assets/fd4d5757-0810-4355-8c1d-45ef69215e40)
+![image](https://github.com/user-attachments/assets/81b5e41d-454e-4bf9-a22e-c37d97c5fe58)
+
 
 
 - When Chunk_size= 300 chunk_overlap = 200
 - query = "Sinh Viên đã hoàn tất 150 TC của Chương Trình Đào Tạo có thể tốt nghiệp chưa?"
 
-![image](https://github.com/user-attachments/assets/a85a8e76-c5d7-4177-b1a5-c6ad69a85d9c)
+![image](https://github.com/user-attachments/assets/63f3d42f-0c87-438e-a957-f8f4c3b991cf)
+
 
 
 
@@ -289,7 +292,8 @@
 - When Chunk_size= 300 chunk_overlap = 100
 - query = "Sinh Viên đã hoàn tất 150 TC của Chương Trình Đào Tạo có thể tốt nghiệp chưa?"
 - 
-![image](https://github.com/user-attachments/assets/f4720d78-edb3-47cc-9aeb-737ecfa1d8c5)
+![image](https://github.com/user-attachments/assets/3a00fbad-237c-40d1-967b-9602f81f10ed)
+
 
 
 
@@ -299,18 +303,19 @@
 
 
 
-![image](https://github.com/user-attachments/assets/026c69b6-373e-41f1-9718-b59c1ddfbf81)
+![image](https://github.com/user-attachments/assets/fa0dcf97-6dde-4595-ab68-f5056f3b1961)
+
 
 - When Chunk_size= 400 chunk_overlap = 100
 - query = "Sinh Viên đã hoàn tất 150 TC của Chương Trình Đào Tạo có thể tốt nghiệp chưa?"
 - 
-![image](https://github.com/user-attachments/assets/ec95051f-874e-4c78-9ff6-62f0518cc851)
+![image](https://github.com/user-attachments/assets/0cc46ff3-68d3-4a22-8550-99af5f64e0df)
+
 
 - When Chunk_size= 400 chunk_overlap = 300
 - query = "Sinh Viên đã hoàn tất 150 TC của Chương Trình Đào Tạo có thể tốt nghiệp chưa?"
 
-![image](https://github.com/user-attachments/assets/0f5a872b-0b0e-4e88-a096-7822566ab8c0)
-
+![image](https://github.com/user-attachments/assets/915c9f05-111d-4048-b6a9-d3e9811a7ef3)
 
 
 
