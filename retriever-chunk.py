@@ -46,7 +46,7 @@ documents = [
 faiss_index = FAISS.from_documents(documents, embedding_model)
 
 # Truy vấn (câu tìm kiếm)
-query = "Sinh Viên đã hoàn tất 150 TC của Chương Trình Đào Tạo có thể tốt nghiệp chưa?"
+query = "Thời gian đào tạo và số tín chỉ tối thiểu của các Chương trình đào tạo?"
 
 # Tìm kiếm các kết quả liên quan bằng retriever
 retriever = faiss_index.as_retriever(search_type="similarity", search_kwargs={"k": 30})
